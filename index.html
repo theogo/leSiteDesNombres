@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Le site des Nombres</title>
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="aos.css">
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+
+        <div class="topnav" id="myTopnav">
+          <a href="#home" id="home" class="active"><img src="img/logos/blanc.png" style="max-height:45px" onmouseover="this.src='img/logos/blanc2.png'" onmouseout="this.src='img/logos/blanc.png'" id="logo"></a>
+          <a href="https://vimeo.com/382962650" target="_blank">Cl1qu3 p4s !</a>
+          <!--<a href="#system">De 1 à 10</a>
+          <a href="javascript:void(0);" class="icon" id="barres" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a> -->
+        </div>
+
+
+
+
+        <!-- Slideshow container -->
+        <div class="slider" data-aos="fade-in">
+          <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <img src="img/3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="img/4.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="img/5.jpg" style="width:100%">
+
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+        </div>
+
+        <section id="system">
+            <div id="system-elements" class="flex-container" data-aos="fade-down"  >
+
+                <button onclick="play0()" id="0" class="nombre">0</button>
+                <button onclick="play1()" id="1" class="nombre">1</button>
+                <button onclick="play2()" id="2" class="nombre">2</button>
+                <button onclick="play3()" id="3" class="nombre">3</button>
+                <button onclick="play4()" id="4" class="nombre">4</button>
+                <button onclick="play5()" id="5" class="nombre">5</button>
+                <button onclick="play6()" id="6" class="nombre">6</button>
+                <button onclick="play7()" id="7" class="nombre">7</button>
+                <button onclick="play8()" id="8" class="nombre">8</button>
+                <button onclick="play9()" id="9" class="nombre">9</button>
+                <button onclick="play10()" id="10" class="nombre">10</button>
+
+              </div>
+
+
+          </section>
+<!--
+            <div class="management" id="management" >
+            <form action="" method="get" class="form-example">
+                    <div class="form-example">
+                      <input type="text" name="name" id="name" placeholder="Nom de la planète" required>
+                    </div>
+                    <div class="form-example">
+                      <select name="size">
+                         <option value="Small">Petite</option>
+                         <option value="Medium">Moyenne</option>
+                         <option value="Grosse">Grande</option>
+                       </select>
+                    </div>
+                    <div class="form-example">
+                      <input type="submit" value="Créer la planète !">
+                    </div>
+
+
+              </form>
+            </div>
+            <div class="bouton">
+            <button class="button button1">+</button>
+            </div>
+
+  -->
+
+  <section id="formulaire">
+
+
+      <div id="system-elements" class="grid-container" data-aos="fade-down"  >
+        <div id ="cases">
+
+          <div class="form1" id="form1" >
+
+
+          <form action="" method="get" class="form-example">
+            <p id="hihi">Hihihi essaye ton chiffre</p>
+                    <input type="text" name="name" id="input" placeholder="Chiffre" required>
+                  <div class="form-example">
+                  <button type="button" class="trivia" id="trivia">Trivia</button>
+                  <button class="year" type="button" id="year">Year</button>
+                  </div>
+          </form>
+          <p id="easter">(bon dsl c'est en anglais mais fais un effort aussi)</p>
+            </div>
+
+
+        </div>
+
+        <div id="result">
+          <div id="result2">
+            <h2 class="number">Nombre</h2>
+          </div>
+          <div class="result3">
+            <p class="lead">Description</p>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+        <script src="main.js"></script>
+        <script src="aos.js"></script>
+        <script>
+        AOS.init({
+          duration: 1400,
+          })
+        </script>
+
+    </body>
+</html>
